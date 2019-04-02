@@ -29,15 +29,59 @@
 			    </div>
 		    </div>
 		    <div class="col-md-2">
+		      <!--image from https://ya-webdesign.com-->
 			    <%= image_tag("logo.png", :alt => "rss feed", :class => "img-fluid") %>
 		    </div>
 	    </div>
 	    
 	    <!--navbar-->
+	    <div class="row">
+    		<div class="col-md-2 bg-dark">
+		    </div>
+		    <div class="col-md-8 bg-dark">
+
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            
+                <li class="nav-item">
+                  <a class="nav-link" href="<%= employees_path%>">List Employees</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="<%=new_employee_path%>">New Employee</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="<%= stores_path%>">List Stores</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="<%=new_store_path%>">New Store</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="<%= assignments_path%>">List Assignments</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="<%=new_assignment_path%>">New Assignment</a>
+                </li>
+          </nav>
+          <br>		  
+	      </div>
+		    <div class="col-md-2 bg-dark">
+		    </div>
+		  </div>
+
 	    
-      <%= yield %>
-    
-    
+    	<div class="row">
+		    <div class="col-md-2">
+		    </div>
+		    <div class="col-md-8">
+          <%= yield %>
+		    </div>
+		    <div class="col-md-2">
+		    </div>
+	    </div>
     
     
       <div class="footer fixed-bottom"> 
