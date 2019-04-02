@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :employees
   resources :stores
   resources :assignments
+  root 'employees#index'
 end
